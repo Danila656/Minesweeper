@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #5d6488;
+    -webkit-user-select: none;
+}
+
+.lose-text {
+    font-size: 50px;
+    color: #ff000b;
+
+}
+
+.flag {
+    width: 46px;
+    height: 46px;
+}
+
+.amountOfMinesOnField {
+    margin-top: 50px;
+    background-color: #93ffe7;
+    width: 110px;
+    height: 90px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: #93ffe7;
+    cursor: pointer;
+}
+
+.amountOfMinesOnField p {
+    margin: 5px;
+}
+
+.win-text {
+    font-size: 50px;
+    color: #09ff00;
+}
+
+.invisible-container {
+    display: none;
+}
+
+.lose-window {
+    position: absolute;
+    margin-top: 250px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    background-color: #c4a1a1;
+    padding-bottom: 50px;
+    border-radius: 25px;
+}
+
+.win-window {
+    position: absolute;
+    margin-top: 250px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    background-color: #7697c4;
+    padding-bottom: 50px;
+    border-radius: 25px;
+}
+
+.start-button {
+    background-color: #4fc400;
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 20px 25px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-style: inherit;
+    color: #ffffff;
+}
+
+.clear-cell {
+    background-color: #b3ffb1;
+    width: 46px;
+    height: 46px;
+    border: solid 2px gray;
+}
+
+.cover-of-cell {
+    background-color: #fff6f8;
+    width: 46px;
+    height: 46px;
+    border: solid 2px gray;
+}
+
+.cell-with-mine {
+    background-color: #ff000b;
+    width: 46px;
+    height: 46px;
+    border: solid 2px gray;
+}
+
+.field {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+}
+
+.numberOnCell {
+    color: #0e1b0f;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    margin: 0;
+}

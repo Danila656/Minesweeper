@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body oncontextmenu="return false">
+<div class="invisible-container" id="winWindow">
+    <p class="win-text">WIN</p>
+    <a class="start-button" onclick="continueGame()">OK</a>
+</div>
+<div id='loseWindow'  class="invisible-container">
+    <p class="lose-text">DEFEAT</p>
+    <a class="start-button" onclick="continueGame()"> OK</a>
+</div>
+<a class='start-button' id='startButton' onclick="startGame()">Start</a>
+<div class="amountOfMinesOnField"  onclick="doAmountOfMines()">
+    <p>amount of mines</p>
+    <p id="amountOfMinesOnField">18</p>
+</div>
+<div id="field" class="field"></div>
+</body>
+</html>

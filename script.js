@@ -224,6 +224,7 @@ const continueGame = () => {
     document.getElementById('winWindow').className = 'invisible-container';
     document.getElementById('amountOfMinesOnField').parentNode.className = 'amountOfMinesOnField';
     document.getElementById('field').className = 'field';
+    
     field.forEach(function (item) {
         obj = item;
         numberOnCell = obj.amountOfMinesAround ? obj.amountOfMinesAround : '';

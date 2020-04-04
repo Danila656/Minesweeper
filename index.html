@@ -9,16 +9,17 @@
 <body oncontextmenu="return false">
 <div class="invisible-container" id="winWindow">
     <p class="win-text">WIN</p>
-    <a class="start-button" onclick="continueGame()">OK</a>
+    <a onmouseover="selectButton(event)" onmouseout="deleteSelectionOnButton(event)" class="start-button" onclick="continueGame()">OK</a>
 </div>
 <div id='loseWindow'  class="invisible-container">
     <p class="lose-text">DEFEAT</p>
-    <a class="start-button" onclick="continueGame()"> OK</a>
+    <a class="start-button" onmouseout="deleteSelectionOnButton(event)" onmouseover="selectButton(event)" onclick="continueGame()"> OK</a>
 </div>
-<a class='start-button' id='startButton' onclick="startGame()">Start</a>
-<div class="amountOfMinesOnField"  onclick="doAmountOfMines()">
-    <p>amount of mines</p>
+<a class='start-button'  onmouseover="selectButton(event)" onmouseout="deleteSelectionOnButton(event)" id='startButton' onclick="startGame()">Start</a>
+<div class="amountOfMinesOnField">
+    <p class="plus" onclick="moreMines()" onmouseover="selectButton(event)" onmouseout="deleteSelectionOnButton(event)" >+</p>
     <p id="amountOfMinesOnField">18</p>
+    <p class='minus' onclick="lessMines()" onmouseout="deleteSelectionOnButton(event)" onmouseover="selectButton(event)">-</p>
 </div>
 <div id="field" class="field"></div>
 </body>
